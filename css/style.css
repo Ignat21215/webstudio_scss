@@ -1,0 +1,19 @@
+:root {
+    --header-background: #ECECEC;
+    --footer-background:  #2F303A;
+    --color-webstudio: #2196F3;
+    --about-us-section: #F5F4FA;
+    --background-color: #FFFFFF;
+    --text-color-article: #757575;
+    --titles-color: #212121;
+    --text-color: #000000;
+   }
+   :root {
+    --bacground-header: #ECECEC;
+    --webstudio-color: #2196F3;
+    --color-titles: #000000;
+    --text-in-main: #757575;
+    --background-maim: #FFFFFF;
+    --text-color: #212121;
+    --color-buttons: #F5F4FA;
+   }
