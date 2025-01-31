@@ -17,3 +17,7 @@
     --text-color: #212121;
     --color-buttons: #F5F4FA;
    }
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
