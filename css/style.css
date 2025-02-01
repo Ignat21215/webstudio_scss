@@ -7,20 +7,9 @@
     --text-color-article: #757575;
     --titles-color: #212121;
     --text-color: #000000;
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
    }
-   :root {
-    --bacground-header: #ECECEC;
-    --webstudio-color: #2196F3;
-    --color-titles: #000000;
-    --text-in-main: #757575;
-    --background-maim: #FFFFFF;
-    --text-color: #212121;
-    --color-buttons: #F5F4FA;
-   }
-:root {
-  --font-family: "Roboto", sans-serif;
-  --second-family: "Raleway", sans-serif;
-}
 body {
   font-family: var(--font-family)
 }
