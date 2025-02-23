@@ -20,23 +20,7 @@ body {
   width: 1170px;
   margin: 0 auto;
 }
-/* 
-.header {
-  margin-bottom: 80px;
-}
 
-.benefits {
-  margin-bottom: 94px;
-}
-
-.doing {
-  margin-bottom: 94px;
-}
-
-.team {
-  margin-bottom: 34px;
-}
- */
 .header-logo {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -46,7 +30,6 @@ body {
 .navigation-list {
   padding-top: 32px;
   padding-bottom: 32px;
-/*   margin-bottom: 94px; */
 }
 
 .hero {
@@ -83,11 +66,7 @@ body {
 .address {
   padding-bottom: 60px;
 }
-/* 
-.control {
-  margin-top: 94px;
-  margin-bottom: 34px;
-}
+
 
 .advertisements-item {
   margin-bottom: 30px;
