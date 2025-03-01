@@ -115,3 +115,24 @@ body {
   flex-direction: column;
   gap: 9px;
 }
+.control-list {
+  padding: 94px 298px 34px 297px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.adv-container {
+  display: flex;
+  margin: 0 auto;
+}
+.advertisements-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 120px;
+  padding: 0 0 0 0;
+}
+.advertisements-item {
+  height: 404px;
+  width: 370px;
+}
