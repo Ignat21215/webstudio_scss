@@ -20,44 +20,90 @@ body {
   width: 1170px;
   margin: 0 auto;
 }
-
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
 .header-logo {
+  display: flex;
+  flex-direction: row;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
 .info-list,
 .navigation-list {
+  display: flex;
+  justify-content: space-between;
   padding-top: 32px;
   padding-bottom: 32px;
+  gap: 50px;
 }
-
+.info-item, .navigation-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .hero {
   padding-top: 200px;
   padding-bottom: 280px;
 }
-
+.hero-container {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.hero-button {
+  margin: 0 auto;
+}
 .benefits {
   padding-bottom: 94px;
 }
-
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.doing-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.doing-list {
+  padding-bottom: 94px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 30px;
+}
 .doing-title {
   padding-bottom: 50px;
+  margin: 0 auto;
 }
-
-.doing-item {
-  padding-bottom: 94px;
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .team-title {
+  padding-left: 453px;
+  padding-right: 453px;
+  margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 50px;
 }
 
 .team-list {
   padding-bottom: 94px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 30px;
 }
-
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
 .footer-logo {
   padding-top: 60px;
   padding-bottom: 20px;
@@ -65,9 +111,7 @@ body {
 
 .address {
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
-
-
-.advertisements-item {
-  margin-bottom: 30px;
-} */
