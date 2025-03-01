@@ -21,12 +21,11 @@ body {
   margin: 0 auto;
 }
 .header-container {
+  align-items: baseline;
   display: flex;
   justify-content: space-between;
 }
 .header-logo {
-  display: flex;
-  flex-direction: row;
   padding-top: 24px;
   padding-bottom: 25px;
 }
