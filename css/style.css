@@ -13,11 +13,6 @@
   --second-family: "Raleway", sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
 body {
   font-family: var(--font-family);
   background-color: var(--about-us-section);
@@ -39,6 +34,8 @@ ul {
 
 .header {
   background-color: var(--about-us-section);
+  border-bottom: 1px solid;
+  border-bottom-color: var(--adv-item-border);
 }
 
 .header-container {
@@ -260,12 +257,12 @@ ul {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  align-content: center;
+  flex-direction: column;
 }
 
 .team-img {
-  width: 260px;
-  height: 270px;
+  width: 270px;
+  height: 260px;
 }
 
 .team-desc {
@@ -275,6 +272,7 @@ ul {
   letter-spacing: 3%;
   line-height: 100%;
   margin: 0 0 0 0;
+  padding-bottom: 30px;
 }
 
 .team-subtitle {
@@ -284,39 +282,12 @@ ul {
   line-height: 100%;
   letter-spacing: 3%;
   margin: 0 0 0 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
-.team-desc:nth-child(1) {
-  padding: 10px 70px 30px 70px;
-}
 
-.team-desc:nth-child(2) {
-  padding: 10px 61px 30px 62px;
-}
-
-.team-desc:nth-child(3) {
-  padding: 10px 97px 30px 97px;
-}
-
-.team-desc:nth-child(4) {
-  padding: 10px 91px 30px 92px;
-}
-
-.team-subtitle:nth-child(1) {
-  padding: 30px 70px 0px 71px;
-}
-
-.team-subtitle:nth-child(2) {
-  padding: 30px 83px 0px 83px;
-}
-
-.team-subtitle:nth-child(3) {
-  padding: 30px 70px 0px 70px;
-}
-
-.team-subtitle:nth-child(4) {
-  padding: 30px 62px 0px 63px;
-}
+/* !T E A M  E N D */
 
 .footer {
   background-color: var(--footer-background);
@@ -381,6 +352,8 @@ ul {
   letter-spacing: 3%;
 }
 
+/* !P O R T F O L I O */
+
 .control-list {
   padding: 94px 298px 34px 297px;
   display: flex;
@@ -405,22 +378,14 @@ ul {
   color: var(--about-us-section);
 }
 
-.control-button:nth-child(1) {
-  width: 73px;
+.control-button {
+  width: auto;
+  padding-right: 22px;
+  padding-left: 22px;
+  text-align: center;
 }
 
-.control-button:nth-child(2) {
-  width: 112px;
-}
-
-.control-button:nth-child(3) {
-  width: 103px;
-}
-
-.control-button:nth-child(4) {
-  width: 130px;
-}
-
+/* !A D V  S E C T I O N */
 .adv-container {
   display: flex;
   margin: 0 auto;
@@ -430,21 +395,23 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 120px;
-  padding: 0 0 0 0;
   margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .advertisements-item {
   height: 404px;
   width: 370px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   background-color: var(--about-us-section);
   border-width: 1px;
   border-color: var(--adv-item-border);
+  border-style: solid;
+  flex-direction: column;
+  text-align: start;
 }
 .advertisements-item:nth-child(n+7) {
-  padding-bottom: 94px;
+  margin-bottom: 94px;
 }
 
 .advertisements-title {
@@ -453,7 +420,8 @@ ul {
   font-weight: 700;
   letter-spacing: 6%;
   line-height: 36px;
-  padding: 20px 24px 0px 24px;
+  padding-top: 20px;
+  padding-left: 24px;
   margin: 0 0 0 0;
 }
 .advertisements-subtitle {
@@ -462,7 +430,8 @@ ul {
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 3%;
-  padding: 20px 24px 20px 24px;
+  padding-top: 4px;
+  padding-left: 24px;
   margin: 0 0 0 0;
 }
 .advertisements-image {
