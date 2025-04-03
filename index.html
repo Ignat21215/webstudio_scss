@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link href="./css/reset.css" rel="stylesheet" />
-    <link href="./css/style.css" rel="stylesheet" />
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -23,43 +23,47 @@
           <a href="index.html" class="header-logo"
             >Web<span class="header-logo_span">Studio</span></a
           >
-            <nav class="header-nav">
-              <ul class="header-navigation-list">
-                <li class="header-navigation-item">
-                  <a href="index.html" class="header-navigation-link">Студія</a>
-                </li>
-                <li class="header-navigation-item">
-                  <a href="portfolio.html" class="header-navigation-link">Портфоліо</a>
-                </li>
-                <li class="header-navigation-item">
-                  <a href="" class="header-navigation-link">Контакти</a>
-                </li>
-              </ul>
-            </nav>
+          <nav class="header-nav">
+            <ul class="header-navigation-list">
+              <li class="header-navigation-item">
+                <a href="index.html" class="header-navigation-link">Студія</a>
+              </li>
+              <li class="header-navigation-item">
+                <a href="portfolio.html" class="header-navigation-link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="header-navigation-item">
+                <a href="" class="header-navigation-link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-          <ul class="header-info-list">
-            <li class="header-info-item">
-              <a href="mailto:@devstudio.com" class="header-info-link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="header-info-item">
-              <a href="tel:+380961111111" class="header-info-link"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>
+        <ul class="header-info-list">
+          <li class="header-info-item">
+            <a href="mailto:@devstudio.com" class="header-info-link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header-info-item">
+            <a href="tel:+380961111111" class="header-info-link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <!-- !H E A D E R  E N D -->
     <main>
       <section class="hero">
-        <div class="container hero-container">
-          <h1 class="hero-title">
-            Ефективні рішення для <br />
-            вашого бізнесу
-          </h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+        <div class="hero-overlay">
+          <div class="container hero-container">
+            <h1 class="hero-title">
+              Ефективні рішення для <br />
+              вашого бізнесу
+            </h1>
+            <button type="button" class="hero-button">Замовити послугу</button>
+          </div>
         </div>
       </section>
       <!-- !H E R O  E N D -->
@@ -68,7 +72,7 @@
           <ul class="benefits-list">
             <li class="benefits-item">
               <article class="benefits-article">
-                <h3 class="benefits-title">Увага до деталей</h3>
+                <h3 class="benefits-title antena">Увага до деталей</h3>
                 <p class="benefits-desc">
                   Ідейні міркування, і навіть початок <br />
                   повсякденної роботи з формування <br />
@@ -78,7 +82,7 @@
             </li>
             <li class="benefits-item">
               <article class="benefits-article">
-                <h3 class="benefits-title">Пунктуальність</h3>
+                <h3 class="benefits-title clock">Пунктуальність</h3>
                 <p class="benefits-desc">
                   Завдання організації, особливо рамки <br />
                   і місце навчання кадрів тягне у себе
@@ -87,7 +91,7 @@
             </li>
             <li class="benefits-item">
               <article class="benefits-article">
-                <h3 class="benefits-title">Планування</h3>
+                <h3 class="benefits-title diagrama">Планування</h3>
                 <p class="benefits-desc">
                   Так само консультація з широким <br />
                   активом значною мірою зумовлює
@@ -96,7 +100,7 @@
             </li>
             <li class="benefits-item">
               <article class="benefits-article">
-                <h3 class="benefits-title">Сучасні технології</h3>
+                <h3 class="benefits-title astronaut">Сучасні технології</h3>
                 <p class="benefits-desc">
                   Значимість цих проблем настільки <br />
                   очевидна, що реалізація планових <br />
@@ -123,7 +127,7 @@
             </li>
             <li class="doing-item">
               <img
-                src="./images/main-page/marketing.png"
+                src="./images/main-page/marketing.jpg"
                 alt="marketing"
                 width="300"
                 height="300"
@@ -132,7 +136,7 @@
             </li>
             <li class="doing-item">
               <img
-                src="./images/main-page/design.png"
+                src="./images/main-page/design.jpg"
                 alt="design"
                 width="300"
                 height="300"
@@ -151,7 +155,7 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/main-page/igor.png"
+                src="./images/main-page/igor.jpg"
                 alt="Ігор"
               />
               <h4 class="team-subtitle">Ігор Дем'яненко</h4>
