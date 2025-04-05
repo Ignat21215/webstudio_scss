@@ -47,8 +47,8 @@ ul {
   background-color: var(--about-us-section);
   border-bottom: 1px solid;
   border-bottom-color: var(--adv-item-border);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-wrapper {
@@ -240,11 +240,11 @@ ul {
 .team {
   background-color: var(--background-team);
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .team-title {
   text-align: center;
-  padding-top: 94px;
   padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -254,8 +254,6 @@ ul {
 }
 
 .team-list {
-  width: 1170px;
-  padding-bottom: 94px;
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -306,6 +304,8 @@ ul {
 
 .footer {
   background-color: var(--footer-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-wrapper {
@@ -315,7 +315,6 @@ ul {
 
 .footer-logo {
   color: var(--color-webstudio);
-  padding-top: 60px;
   padding-bottom: 20px;
   font-family: var(--second-family);
   line-height: auto;
@@ -335,7 +334,6 @@ ul {
 
 
 .footer-ddress {
-  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -367,9 +365,12 @@ ul {
 
 /* !P O R T F O L I O */
 
-.control-list {
+.control {
   padding-top: 94px;
   padding-bottom: 34px;
+}
+
+.control-list {
   display: flex;
   justify-content: center;
   gap: 8px;
