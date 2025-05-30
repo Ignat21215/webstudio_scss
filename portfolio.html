@@ -17,19 +17,24 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./fonts/style.css"
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
         <div class="header-wrapper">
-          <a href="index.html" class="header-logo">Web<span class="header-logo-span">Studio</span></a>
+          <a href="index.html" class="header-logo"
+            >Web<span class="header-logo-span">Studio</span></a
+          >
           <nav class="header-nav">
             <ul class="header-nav-list">
-              <li class="header-nav-item">
+              <li class="header-navigation-item">
                 <a href="index.html" class="header-link">Студія</a>
               </li>
               <li class="header-nav-item">
-                <a href="" class="header-link">Портфоліо</a>
+                <a href="portfolio.html" class="header-link"
+                  >Портфоліо</a
+                >
               </li>
               <li class="header-nav-item">
                 <a href="" class="header-link">Контакти</a>
@@ -37,14 +42,16 @@
             </ul>
           </nav>
         </div>
-        <ul class="header-info-list">
-          <li class="header-info-item">
-            <a href="mailto:@devstudio.com" class="header-info-link"
-              >info@devstudio.com</a
+        <ul class="header-list">
+          <li class="header-item">
+            <a href="mailto:@devstudio.com" class="header-link"
+              ><span class="icon-gmail header-link-span"></span>info@devstudio.com</a
             >
           </li>
-          <li class="header-info-item">
-            <a href="tel:+380961111111" class="header-info-link">+38 096 111 11 11</a>
+          <li class="header-item">
+            <a href="tel:+380961111111" class="header-link"
+              ><span class="icon-smartphone header-link-span"></span>+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -199,25 +206,38 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <<footer class="footer">
       <div class="container footer-container">
-        <a href="index.html" class="footer-logo">Web<span class="footer-logo-span">Studio</span></a>
-        <!-- Дані, адреса -->
-        <address class="footer-address">
-          <ul class="footer-address-list">
-            <li class="footer-address-item">м. Київ, пр-т Лесі Українки, 26</li>
-            <li class="footer-address-item">
-              <a href="mailto:@devstudio.com" class="footer-address-link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="footer-address-item">
-              <a href="tel:+380961111111" class="footer-address-link"
-                >+38 096 111 11 11</a
-              >
-            </li>
+        <div class="footer-address-wrapper">
+          <a href="index.html" class="footer-logo"
+            >Web<span class="footer-logo-span">Studio</span></a
+          >
+          <!-- !Дані, адреса -->
+          <address class="footer-address">
+            <ul class="footer-address-list">
+              <li class="footer-address-item">м. Київ, пр-т Лесі Українки, 26</li>
+              <li class="footer-address-item">
+                <a href="mailto:@devstudio.com" class="footer-address-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-address-item">
+                <a href="tel:+380961111111" class="footer-address-link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-wrapper">
+          <h3 class="footer-list-title">ПРИЄДНУЙТЕСЬ</h3>
+          <ul class="footer-list">
+            <li class="footer-item"><a href="" class="footer-link"><span class="footer-span icon-instagram"></span></a></li>
+            <li class="footer-item"><a href="" class="footer-link"><span class="footer-span icon-twitter"></span></a></li>
+            <li class="footer-item"><a href="" class="footer-link"><span class="footer-span icon-facebook"></span></a></li>
+            <li class="footer-item"><a href="" class="footer-link"><span class="footer-span icon-linkedin"></span></a></li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
