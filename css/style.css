@@ -82,6 +82,8 @@ ul {
   letter-spacing: 0.02em;
   line-height: auto;
   font-size: 14px;
+  display: flex;
+  align-items: center;
 }
 
 .header-list,
@@ -101,7 +103,7 @@ ul {
   height: 16px;
 }
 
-.header-icon:hover {
+.header-link:hover .header-icon {
   fill: var(--color-webstudio);
 }
 
@@ -318,6 +320,7 @@ ul {
 .team-item-link {
   padding: 12px;
   border-radius: 100%;
+  display: block;
 }
 
 .team-icon {
@@ -326,12 +329,12 @@ ul {
   height: 20px;
 }
 
-.team-icon:hover {
-  fill: var(--about-us-section);
-}
-
 .team-item-link:hover {
   background-color: var(--color-webstudio);
+}
+
+.team-item-link:hover .team-icon {
+  fill: var(--about-us-section);
 }
 
 /* !T E A M  E N D */
@@ -361,6 +364,7 @@ ul {
   border-color: var(--icon-color);
   border-radius: 4px;
   padding: 16px 32px;
+  display: block;
 }
 
 .clients-item-icon {
@@ -369,12 +373,12 @@ ul {
   height: 60px;
 }
 
-.clients-item-icon:hover {
-  fill: var(--color-webstudio);
-}
-
 .clients-item-link:hover {
   border-color: var(--color-webstudio);
+}
+
+.clients-item-link:hover .clients-item-icon {
+  fill: var(--color-webstudio);
 }
 
 .footer {
@@ -457,6 +461,7 @@ ul {
   padding: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
+  display: block;
 }
 
 .footer-icon {
@@ -467,6 +472,10 @@ ul {
 
 .footer-link:hover {
   background-color: var(--color-webstudio);
+}
+
+.footer-link:hover .footer-icon {
+  fill: var(--about-us-section);
 }
 
 /* !P O R T F O L I O */
