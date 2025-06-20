@@ -289,6 +289,10 @@ ul {
   border-color: var(--main-color);
 }
 
+.hero-modal-input:hover .hero-modal-label-icon {
+  fill: var(--main-color);
+}
+
 .hero-modal-wrapper {
   display: flex;
   gap: 7px;
@@ -299,6 +303,7 @@ ul {
   border: 2px solid;
   border-color: var(--titles-color);
   padding: 4px 2px 3px 3px;
+  background-color: var(--main-color);
 }
 
 .hero-modal-desc {
