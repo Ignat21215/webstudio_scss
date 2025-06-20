@@ -61,7 +61,39 @@
               Ефективні рішення для <br />
               вашого бізнесу
             </h1>
-            <button type="button" class="hero-button">Замовити послугу</button>
+            <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
+            <div class="backdrop is-hidden" data-modal>
+              <div class="hero-modal">
+                <button class="hero-modal-close-btn" type="button" data-modal-close><svg class="close-icon"><use href="./images/symbol-defs.svg#icon-close"></use></svg></button>
+                <h2 class="hero-modal-title title">Залиште свої дані, ми вам передзвонимо</h2>
+                <form class="hero-modal-form">
+                  <label class="hero-modal-label">
+                    Ім'я
+                    <input type="text" class="hero-modal-input">
+                    <svg class="hero-modal-label-icon"><use href="./images/symbol-defs.svg#icon-name"></use></svg>
+                  </label>
+                  <label class="hero-modal-label">
+                    Телефон
+                    <input type="tel" class="hero-modal-input">
+                    <svg class="hero-modal-label-icon phone"><use href="./images/symbol-defs.svg#icon-phone"></use></svg>
+                  </label>
+                  <label class="hero-modal-label">
+                    Пошта
+                    <input class="hero-modal-input" type="email">
+                    <svg class="hero-modal-label-icon e-mail"><use href="./images/symbol-defs.svg#icon-e-mail"></use></svg>
+                  </label>
+                  <label class="hero-modal-label">
+                    Коментар
+                    <textarea placeholder="Введіть текст" class="hero-modal-textarea"></textarea>
+                  </label>
+                </form>
+                <div class="hero-modal-wrapper">
+                  <input type="checkbox" class="hero-modal-checkbox">
+                  <p class="hero-modal-desc">Погоджуюся з розсилкою та приймаю <a href="" class="hero-modal-desc-link">Умови договору</a></p>
+                </div>
+                <button type="submit" class="hero-modal-btn">Відправити</button>
+              </div>
+            </div>
           </div>
       </section>
       <!-- !H E R O  E N D -->
@@ -115,6 +147,7 @@
           <h2 class="doing-title title">Чим ми займаємося</h2>
           <ul class="doing-list">
             <li class="doing-item">
+              <p class="doing-desc desktop">Десктопні додатки</p>
               <img
                 src="./images/main-page/coding.jpg"
                 alt="coding"
@@ -124,6 +157,7 @@
               />
             </li>
             <li class="doing-item">
+              <p class="doing-desc mobile">Мобільні додатки</p>
               <img
                 src="./images/main-page/marketing.jpg"
                 alt="marketing"
@@ -133,6 +167,7 @@
               />
             </li>
             <li class="doing-item">
+              <p class="doing-desc design">Дизайнерські рішення</p>
               <img
                 src="./images/main-page/design.jpg"
                 alt="design"
@@ -230,37 +265,49 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-address-wrapper">
-          <a href="index.html" class="footer-logo"
-            >Web<span class="footer-logo-span">Studio</span></a
-          >
-          <!-- !Дані, адреса -->
-          <address class="footer-address">
-            <ul class="footer-address-list">
-              <li class="footer-address-item">м. Київ, пр-т Лесі Українки, 26</li>
-              <li class="footer-address-item">
-                <a href="mailto:@devstudio.com" class="footer-address-link"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="footer-address-item">
-                <a href="tel:+380961111111" class="footer-address-link"
-                  >+38 096 111 11 11</a
-                >
-              </li>
+        <div class="left-part-footer-wrapper">
+          <div class="footer-address-wrapper">
+            <a href="index.html" class="footer-logo"
+              >Web<span class="footer-logo-span">Studio</span></a
+            >
+            <!-- !Дані, адреса -->
+            <address class="footer-address">
+              <ul class="footer-address-list">
+                <li class="footer-address-item">м. Київ, пр-т Лесі Українки, 26</li>
+                <li class="footer-address-item">
+                  <a href="mailto:@devstudio.com" class="footer-address-link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-address-item">
+                  <a href="tel:+380961111111" class="footer-address-link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-wrapper">
+            <h3 class="footer-list-title">ПРИЄДНУЙТЕСЬ</h3>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="" class="footer-link"><svg class="footer-icon"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg></a></li>
+              <li class="footer-item"><a href="" class="footer-link"><svg class="footer-icon"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+              <li class="footer-item"><a href="" class="footer-link"><svg class="footer-icon"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg></a></li>
+              <li class="footer-item"><a href="" class="footer-link"><svg class="footer-icon"><use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a></li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer-wrapper">
-          <h3 class="footer-list-title">ПРИЄДНУЙТЕСЬ</h3>
-          <ul class="footer-list">
-            <li class="footer-item"><a href="" class="footer-link"><svg class="footer-icon"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg></a></li>
-            <li class="footer-item"><a href="" class="footer-link"><svg class="footer-icon"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg></a></li>
-            <li class="footer-item"><a href="" class="footer-link"><svg class="footer-icon"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg></a></li>
-            <li class="footer-item"><a href="" class="footer-link"><svg class="footer-icon"><use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a></li>
-          </ul>
-        </div>
+        <div class="footer-form-wrapper">
+        <h3 class="footer-form-title">Підпишіться на розсилку</h3>
+        <form class="footer-form">
+          <label class="footer-from-label">
+            <input type="email" class="footer-form-input" placeholder="E-mail">
+          </label>
+          <button type="submit" class="footer-form-button">Підписатися <svg class="footer-form-btn-icon"><use href="./images/symbol-defs.svg#icon-send"></use></svg></button>
+        </form>
       </div>
+    </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
