@@ -37,8 +37,9 @@ ul {
   color: var(--titles-color);
   font-size: 36px;
   letter-spacing: 0.03em;
-  line-height: auto;
+
   font-weight: 700;
+  padding-bottom: 50px;
 }
 
 .container {
@@ -70,7 +71,6 @@ ul {
 .header-logo {
   color: var(--main-color);
   font-family: var(--second-family);
-  line-height: auto;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
@@ -89,7 +89,6 @@ ul {
   color: var(--titles-color);
   font-weight: 500;
   letter-spacing: 0.02em;
-  line-height: auto;
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -114,7 +113,7 @@ ul {
   position: relative;
 }
 
-.current-page::after {
+.current-page:hover::after {
   content: '';
   position: absolute;
   border-radius: 2px;
@@ -126,7 +125,7 @@ ul {
   height: 4px;
 }
 
-.portfolio-current-page::after {
+.portfolio-current-page:hover::after {
   content: '';
   position: absolute;
   border-radius: 2px;
@@ -159,7 +158,6 @@ ul {
 
 .header-link {
   color: var(--desc-color);
-  line-height: auto;
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
@@ -412,7 +410,7 @@ ul {
 .benefits-title {
   color: var(--titles-color);
   font-weight: 700;
-  line-height: auto;
+
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -442,27 +440,23 @@ ul {
   position: relative;
 }
 
-.doing-desc {
+.doing-overlay {
   background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
+    position: absolute;
+    top: 224px;
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doing-desc {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--light-txt-color);
-  top: 224px;
-}
-
-.desktop {
-  padding: 27px 107px;
-}
-
-.mobile {
-  padding: 27px 113px;
-}
-
-.design {
-  padding: 27px 95px;
 }
 
 .doing-title {
@@ -484,10 +478,6 @@ ul {
   background-color: var(--background-team);
   padding-bottom: 94px;
   padding-top: 94px;
-}
-
-.team-title {
-  padding-bottom: 50px;
 }
 
 .team-list {
@@ -520,7 +510,7 @@ ul {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
-  line-height: auto;
+
   padding-bottom: 16px;
 }
 
@@ -528,7 +518,7 @@ ul {
   color: var(--titles-color);
   font-size: 16px;
   font-weight: 500;
-  line-height: auto;
+
   letter-spacing: 0.03em;
   padding-top: 30px;
   padding-bottom: 10px;
@@ -618,9 +608,7 @@ ul {
 
 .footer-logo {
   color: var(--main-color);
-  padding-bottom: 20px;
   font-family: var(--second-family);
-  line-height: auto;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
@@ -629,30 +617,28 @@ ul {
 .footer-logo-span {
   color: var(--light-txt-color);
   font-family: var(--second-family);
-  line-height: auto;
+
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
 }
 
 .footer-address {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
+  padding-top: 20px;
 }
 
 .footer-address-list {
+  display: flex;
   flex-direction: column;
   text-decoration: none;
-  font-style: normal;
+  gap: 9px;
 }
 
 .footer-address-item {
-  padding-top: 20px;
   color: var(--light-txt-color);
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 21px;
   letter-spacing: 0.03em;
 }
 
@@ -795,11 +781,6 @@ ul {
   padding-bottom: 94px;
 }
 
-.advertisements-container {
-  display: flex;
-  margin: 0 auto;
-}
-
 .advertisements-list {
   display: flex;
   flex-wrap: wrap;
@@ -809,7 +790,6 @@ ul {
 
 .advertisements-item {
   background-color: var(--light-txt-color);
-  flex-direction: column;
   text-align: start;
   flex-basis: calc((100% - 60px) / 3);
   position: relative;
@@ -828,8 +808,8 @@ ul {
   height: 294px;
   display: none;
   background-image: linear-gradient(to top,
-  rgba(33, 150, 243, 0.9),
-  rgba(33, 150, 243, 0.9));
+      rgba(33, 150, 243, 0.9),
+      rgba(33, 150, 243, 0.9));
   padding: 63px 24px;
 }
 
