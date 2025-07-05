@@ -42,7 +42,7 @@ ul {
 }
 
 .animation {
-  transition-property: color, background-color, fill, box-shadow;
+  transition-property: color, background-color, fill, box-shadow, opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
@@ -811,7 +811,7 @@ ul {
   left: 0;
   width: 370px;
   height: 294px;
-  display: none;
+  opacity: 0;
   background-image: linear-gradient(to top,
       rgba(33, 150, 243, 0.9),
       rgba(33, 150, 243, 0.9));
@@ -826,7 +826,7 @@ ul {
 }
 
 .advertisements-item:hover .advertisements-overlay {
-  display: block;
+  opacity: 1;
 }
 
 .advertisements-title {
