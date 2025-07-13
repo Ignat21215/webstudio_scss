@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
     <title>WebStudio</title>
     <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./fonts/style.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -64,23 +65,20 @@
             <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
             <div class="backdrop is-hidden" data-modal>
               <div class="hero-modal">
-                <button class="hero-modal-close-btn" type="button" data-modal-close><svg class="close-icon"><use href="./images/symbol-defs.svg#icon-close"></use></svg></button>
+                <button class="hero-modal-close-btn" type="button" data-modal-close>
                 <h2 class="hero-modal-title title">Залиште свої дані, ми вам передзвонимо</h2>
                 <form class="hero-modal-form">
                   <label class="hero-modal-label">
                     Ім'я
-                    <input type="text" class="hero-modal-input">
-                    <svg class="hero-modal-label-icon"><use href="./images/symbol-defs.svg#icon-name"></use></svg>
+                    <input type="text" class="hero-modal-input man">
                   </label>
                   <label class="hero-modal-label">
                     Телефон
-                    <input type="tel" class="hero-modal-input">
-                    <svg class="hero-modal-label-icon phone"><use href="./images/symbol-defs.svg#icon-phone"></use></svg>
+                    <input type="tel" class="hero-modal-input phone">
                   </label>
                   <label class="hero-modal-label">
                     Пошта
-                    <input class="hero-modal-input" type="email">
-                    <svg class="hero-modal-label-icon e-mail"><use href="./images/symbol-defs.svg#icon-e-mail"></use></svg>
+                    <input class="hero-modal-input email" type="email">
                   </label>
                   <label class="hero-modal-label">
                     Коментар
