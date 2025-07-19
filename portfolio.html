@@ -17,15 +17,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
         <div class="header-wrapper">
-          <a href="index.html" class="header-logo"
+          <a href="index.html" class="header-logo" data-aos="zoom-in-right"
             >Web<span class="header-logo-span">Studio</span></a
           >
-          <nav class="header-nav">
+          <nav class="header-nav" data-aos="zoom-out-up">
             <ul class="header-nav-list">
               <li class="header-navigation-item">
                 <a href="index.html" class="header-item-link animation">Студія</a>
@@ -41,7 +42,7 @@
             </ul>
           </nav>
         </div>
-        <ul class="header-list">
+        <ul class="header-list" data-aos="zoom-in-left">
           <li class="header-item">
             <a href="mailto:@devstudio.com" class="header-link animation"
               ><svg class="header-icon"><use href="./images/symbol-defs.svg#icon-gmail"></use></svg>info@devstudio.com</a
@@ -59,7 +60,7 @@
     <main class="main">
       <section class="control">
         <div class="container">
-          <ul class="control-list">
+          <ul class="control-list" data-aos="zoom-in-up">
             <li class="control-item">
               <button type="button" class="control-button animation">Усі</button>
             </li>
@@ -81,7 +82,7 @@
       <section class="advertisements">
         <div class="container advertisements-container">
           <ul class="advertisements-list">
-            <li class="advertisements-item  animation">
+            <li class="advertisements-item  animation" data-aos="fade-up" data-aos-duration="3000">
               <a href="" class="advertisements-link">
                <div class="overlay-wrapper">
                  <div class="advertisements-overlay animation"><p class="advertisements-desc">Ресурс пропонує комплексні пропозиції
@@ -102,7 +103,7 @@
                 </div>
               </a>
             </li>
-            <li class="advertisements-item animation">
+            <li class="advertisements-item animation" data-aos="fade-up" data-aos-duration="3000">
               <a href="" class="advertisements-link">
                 <div class="overlay-wrapper">
                   <div class="advertisements-overlay animation"><p class="advertisements-desc">Ресурс пропонує комплексні пропозиції
@@ -125,7 +126,7 @@
                 </div>
               </a>
             </li>
-            <li class="advertisements-item animation">
+            <li class="advertisements-item animation" data-aos="fade-up" data-aos-duration="3000">
               <a href="" class="advertisements-link">
                 <div class="overlay-wrapper">
                   <div class="advertisements-overlay animation"><p class="advertisements-desc">Ресурс пропонує комплексні пропозиції
@@ -146,7 +147,7 @@
                 </div>
               </a>
             </li>
-            <li class="advertisements-item animation">
+            <li class="advertisements-item animation" data-aos="fade-up" data-aos-duration="3000">
               <a href="" class="advertisements-link">
                 <div class="overlay-wrapper">
                   <div class="advertisements-overlay animation"><p class="advertisements-desc">Ресурс пропонує комплексні пропозиції
@@ -167,7 +168,7 @@
                 </div>
               </a>
             </li>
-            <li class="advertisements-item animation">
+            <li class="advertisements-item animation" data-aos="fade-up" data-aos-duration="3000">
               <a href="" class="advertisements-link">
                 <div class="overlay-wrapper">
                   <div class="advertisements-overlay animation"><p class="advertisements-desc">Ресурс пропонує комплексні пропозиції
@@ -188,7 +189,7 @@
                 </div>
               </a>
             </li>
-            <li class="advertisements-item animation">
+            <li class="advertisements-item animation" data-aos="fade-up" data-aos-duration="3000">
               <a href="" class="advertisements-link">
                 <div class="overlay-wrapper">
                   <div class="advertisements-overlay animation"><p class="advertisements-desc">Ресурс пропонує комплексні пропозиції
@@ -209,7 +210,7 @@
                 </div>
               </a>
             </li>
-            <li class="advertisements-item animation">
+            <li class="advertisements-item animation" data-aos="fade-up" data-aos-duration="3000">
               <a href="" class="advertisements-link">
                 <div class="overlay-wrapper">
                   <div class="advertisements-overlay animation"><p class="advertisements-desc">Ресурс пропонує комплексні пропозиції
@@ -230,7 +231,7 @@
                 </div>
               </a>
             </li>
-            <li class="advertisements-item animation">
+            <li class="advertisements-item animation" data-aos="fade-up" data-aos-duration="3000">
               <a href="" class="advertisements-link">
                 <div class="overlay-wrapper">
                   <div class="advertisements-overlay animation"><p class="advertisements-desc">Ресурс пропонує комплексні пропозиції
@@ -251,7 +252,7 @@
                 </div>
               </a>
             </li>
-            <li class="advertisements-item animation">
+            <li class="advertisements-item animation" data-aos="fade-up" data-aos-duration="3000">
               <a href="" class="advertisements-link">
                 <div class="overlay-wrapper">
                   <div class="advertisements-overlay animation"><p class="advertisements-desc">Ресурс пропонує комплексні пропозиції
@@ -278,7 +279,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container footer-container" data-aos="zoom-in">
         <div class="left-part-footer-wrapper">
           <div class="footer-address-wrapper">
             <a href="index.html" class="footer-logo"
@@ -322,6 +323,10 @@
       </div>
     </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+  </script>
   </body>
 </html>
 
