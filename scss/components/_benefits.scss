@@ -1,0 +1,55 @@
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.benefits-container {
+  display: flex;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 30px;
+}
+
+.benefits-title::before {
+  content: '';
+  background-color: var(--background-team);
+  padding: 25px 100px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.antena::before {
+  content: url(../images/main-page/antenna.jpg);
+}
+
+.astronaut::before {
+  content: url(../images/main-page/astronaut.jpg);
+}
+
+.diagrama::before {
+  content: url(../images/main-page/diagram.jpg);
+}
+
+.clock::before {
+  content: url(../images/main-page/clock.jpg);
+}
+
+.benefits-title {
+  color: var(--titles-color);
+  font-weight: 700;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding-bottom: 10px;
+}
+
+.benefits-desc {
+  color: var(--desc-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
