@@ -23,18 +23,6 @@
   gap: 93px;
 }
 
-.header-logo {
-  color: var(--main-color);
-  font-family: var(--second-family);
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-}
-
-.header-logo-span {
-  color: var(--span-color);
-}
-
 .header-link:hover,
 .header-item-link:hover {
   color: var(--main-color);
