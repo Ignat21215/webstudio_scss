@@ -10,8 +10,8 @@
 }
 
 .control-button {
-  background-color: var(--background-team);
-  color: var(--titles-color);
+  background-color: $background-team;
+  color: $titles-color;
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
@@ -21,11 +21,11 @@
   padding-right: 22px;
   padding-left: 22px;
   text-align: center;
-  font-family: var(--font-family);
+  font-family: $font-family;
 }
 
 .control-button:hover {
-  background-color: var(--main-color);
-  color: var(--light-txt-color);
+  background-color: $main-color;
+  color: $light-txt-color;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
 }

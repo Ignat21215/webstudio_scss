@@ -14,7 +14,7 @@
 
 .benefits-title::before {
   content: '';
-  background-color: var(--background-team);
+  background-color: $background-team;
   padding: 25px 100px;
   display: block;
   margin-bottom: 30px;
@@ -37,7 +37,7 @@
 }
 
 .benefits-title {
-  color: var(--titles-color);
+  color: $titles-color;
   font-weight: 700;
 
   font-size: 14px;
@@ -47,7 +47,7 @@
 }
 
 .benefits-desc {
-  color: var(--desc-color);
+  color: $desc-color;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;

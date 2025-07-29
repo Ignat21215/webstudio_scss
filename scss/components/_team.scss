@@ -1,5 +1,5 @@
 .team {
-  background-color: var(--background-team);
+  background-color: $background-team;
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -11,7 +11,7 @@
 }
 
 .team-item {
-  background-color: var(--light-txt-color);
+  background-color: $light-txt-color;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -30,7 +30,7 @@
 }
 
 .team-item-desc {
-  color: var(--desc-color);
+  color: $desc-color;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -39,7 +39,7 @@
 }
 
 .team-item-title {
-  color: var(--titles-color);
+  color: $titles-color;
   font-size: 16px;
   font-weight: 500;
 
@@ -62,15 +62,15 @@
 }
 
 .team-icon {
-  fill: var(--icon-color);
+  fill: $icon-color;
   width: 20px;
   height: 20px;
 }
 
 .team-item-link:hover {
-  background-color: var(--main-color);
+  background-color: $main-color;
 }
 
 .team-item-link:hover .team-icon {
-  fill: var(--light-txt-color);
+  fill: $light-txt-color;
 }

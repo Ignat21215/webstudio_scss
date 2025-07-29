@@ -140,26 +140,9 @@ a {
   text-decoration: none;
 }
 
-:root {
-  --header-background: rgba(236, 236, 236, 1);
-  --footer-text: rgba(255, 255, 255, 0.6);
-  --footer-background: rgba(47, 48, 58, 1);
-  --main-color: rgba(33, 150, 243, 1);
-  --light-txt-color: rgba(255, 255, 255, 1);
-  --background-team: rgba(245, 244, 250, 1);
-  --desc-color: rgba(117, 117, 117, 1);
-  --span-color: rgba(0, 0, 0, 1);
-  --titles-color: rgba(33, 33, 33, 1);
-  --adv-item-border: rgba(238, 238, 238, 1);
-  --hero-overlay: rgba(47, 48, 58, 0.4);
-  --icon-color: rgba(175, 177, 184, 1);
-  --font-family: "Roboto", sans-serif;
-  --second-family: "Raleway", sans-serif;
-}
-
 .title {
   text-align: center;
-  color: var(--titles-color);
+  color: rgb(33, 33, 33);
   font-size: 36px;
   letter-spacing: 0.03em;
   font-weight: 700;
@@ -167,19 +150,19 @@ a {
 }
 
 .logo {
-  color: var(--main-color);
-  font-family: var(--second-family);
+  color: rgb(33, 150, 243);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
 }
 
 .logo-span {
-  color: var(--span-color);
+  color: rgb(0, 0, 0);
 }
 
 .footer-logo-span {
-  color: var(--light-txt-color);
+  color: rgb(255, 255, 255);
 }
 
 * {
@@ -188,8 +171,8 @@ a {
 }
 
 body {
-  font-family: var(--font-family);
-  background-color: var(--light-txt-color);
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 255, 255);
 }
 
 a {
@@ -234,9 +217,9 @@ ul {
 }
 
 .header {
-  background-color: var(--light-txt-color);
+  background-color: rgb(255, 255, 255);
   border-bottom: 1px solid;
-  border-bottom-color: var(--adv-item-border);
+  border-bottom-color: rgb(238, 238, 238);
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -256,11 +239,11 @@ ul {
 
 .header-link:hover,
 .header-item-link:hover {
-  color: var(--main-color);
+  color: rgb(33, 150, 243);
 }
 
 .header-link {
-  color: var(--titles-color);
+  color: rgb(33, 33, 33);
   font-weight: 500;
   letter-spacing: 0.02em;
   font-size: 14px;
@@ -281,7 +264,7 @@ ul {
 }
 
 .header-item-link {
-  color: var(--titles-color);
+  color: rgb(33, 33, 33);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -289,7 +272,7 @@ ul {
 
 .current-page,
 .portfolio-current-page {
-  color: var(--main-color);
+  color: rgb(33, 150, 243);
   position: relative;
 }
 
@@ -299,7 +282,7 @@ ul {
   display: inline-block;
   border-radius: 2px;
   top: 43px;
-  background-color: var(--main-color);
+  background-color: rgb(33, 150, 243);
   width: 48px;
   height: 4px;
   left: 0;
@@ -312,13 +295,13 @@ ul {
   left: 0;
   border-radius: 2px;
   top: 43px;
-  background-color: var(--main-color);
+  background-color: rgb(33, 150, 243);
   width: 78px;
   height: 4px;
 }
 
 .header-icon {
-  fill: var(--desc-color);
+  fill: rgb(117, 117, 117);
   width: 16px;
   height: 12px;
 }
@@ -329,15 +312,15 @@ ul {
 }
 
 .header-link:hover .header-icon {
-  fill: var(--main-color);
+  fill: rgb(33, 150, 243);
 }
 
 .header-link:hover {
-  color: var(--main-color);
+  color: rgb(33, 150, 243);
 }
 
 .header-link {
-  color: var(--desc-color);
+  color: rgb(117, 117, 117);
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
@@ -348,8 +331,8 @@ ul {
 }
 
 .hero {
-  background: -webkit-gradient(linear, left top, right top, from(var(--hero-overlay)), to(var(--hero-overlay))), url(../images/main-page/hero-bg.jpg) center/cover no-repeat;
-  background: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url(../images/main-page/hero-bg.jpg) center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-page/hero-bg.jpg) center/cover no-repeat;
+  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-page/hero-bg.jpg) center/cover no-repeat;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -364,14 +347,14 @@ ul {
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--light-txt-color);
+  color: rgb(255, 255, 255);
   padding-bottom: 30px;
 }
 
 .hero-button {
   padding: 10px 32px;
-  background-color: var(--main-color);
-  color: var(--light-txt-color);
+  background-color: rgb(33, 150, 243);
+  color: rgb(255, 255, 255);
   border-width: 0;
   border-radius: 4px;
   font-weight: 700;
@@ -380,7 +363,7 @@ ul {
   font-size: 16px;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
 }
 
 .backdrop {
@@ -411,7 +394,7 @@ ul {
   width: 528px;
   height: 581px;
   padding: 40px;
-  background-color: var(--light-txt-color);
+  background-color: rgb(255, 255, 255);
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
@@ -446,7 +429,7 @@ ul {
 }
 
 .close-icon:hover {
-  fill: var(--main-color);
+  fill: rgb(33, 150, 243);
 }
 
 .hero-modal-title {
@@ -476,7 +459,7 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 4px;
-  color: var(--desc-color);
+  color: rgb(117, 117, 117);
   text-align: left;
   font-size: 12px;
   letter-spacing: 0.01em;
@@ -543,11 +526,11 @@ ul {
 }
 
 .hero-modal-input:hover {
-  border-color: var(--main-color);
+  border-color: rgb(33, 150, 243);
 }
 
 .hero-modal-input:hover .hero-modal-label-icon {
-  fill: var(--main-color);
+  fill: rgb(33, 150, 243);
 }
 
 .hero-modal-wrapper {
@@ -562,36 +545,36 @@ ul {
 
 .hero-modal-checkbox {
   border: 2px solid;
-  border-color: var(--titles-color);
+  border-color: rgb(33, 33, 33);
   padding: 4px 2px 3px 3px;
-  background-color: var(--main-color);
+  background-color: rgb(33, 150, 243);
 }
 
 .hero-modal-desc {
   font-size: 14px;
   line-height: 23px;
-  color: var(--desc-color);
+  color: rgb(117, 117, 117);
 }
 
 .hero-modal-desc-link {
-  color: var(--main-color);
+  color: rgb(33, 150, 243);
   text-decoration: underline;
 }
 
 .hero-modal-btn {
   margin-top: 30px;
-  background-color: var(--main-color);
+  background-color: rgb(33, 150, 243);
   border-radius: 4px;
   border: 0;
   padding: 10px 52px;
-  color: var(--light-txt-color);
+  color: rgb(255, 255, 255);
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
   font-weight: 700;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
 }
 
 .benefits {
@@ -614,7 +597,7 @@ ul {
 
 .benefits-title::before {
   content: "";
-  background-color: var(--background-team);
+  background-color: rgb(245, 244, 250);
   padding: 25px 100px;
   display: block;
   margin-bottom: 30px;
@@ -637,7 +620,7 @@ ul {
 }
 
 .benefits-title {
-  color: var(--titles-color);
+  color: rgb(33, 33, 33);
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -646,7 +629,7 @@ ul {
 }
 
 .benefits-desc {
-  color: var(--desc-color);
+  color: rgb(117, 117, 117);
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -690,7 +673,7 @@ ul {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: var(--light-txt-color);
+  color: rgb(255, 255, 255);
 }
 
 .doing-title {
@@ -704,11 +687,11 @@ ul {
 
 .doing,
 .benefits {
-  background-color: var(--light-txt-color);
+  background-color: rgb(255, 255, 255);
 }
 
 .team {
-  background-color: var(--background-team);
+  background-color: rgb(245, 244, 250);
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -724,7 +707,7 @@ ul {
 }
 
 .team-item {
-  background-color: var(--light-txt-color);
+  background-color: rgb(255, 255, 255);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -748,7 +731,7 @@ ul {
 }
 
 .team-item-desc {
-  color: var(--desc-color);
+  color: rgb(117, 117, 117);
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -756,7 +739,7 @@ ul {
 }
 
 .team-item-title {
-  color: var(--titles-color);
+  color: rgb(33, 33, 33);
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.03em;
@@ -780,17 +763,17 @@ ul {
 }
 
 .team-icon {
-  fill: var(--icon-color);
+  fill: rgb(175, 177, 184);
   width: 20px;
   height: 20px;
 }
 
 .team-item-link:hover {
-  background-color: var(--main-color);
+  background-color: rgb(33, 150, 243);
 }
 
 .team-item-link:hover .team-icon {
-  fill: var(--light-txt-color);
+  fill: rgb(255, 255, 255);
 }
 
 .clients {
@@ -812,28 +795,28 @@ ul {
 
 .clients-item-link {
   border: 1px solid;
-  border-color: var(--icon-color);
+  border-color: rgb(175, 177, 184);
   border-radius: 4px;
   padding: 16px 32px;
   display: block;
 }
 
 .clients-item-icon {
-  fill: var(--icon-color);
+  fill: rgb(175, 177, 184);
   width: 100px;
   height: 60px;
 }
 
 .clients-item-link:hover {
-  border-color: var(--main-color);
+  border-color: rgb(33, 150, 243);
 }
 
 .clients-item-link:hover .clients-item-icon {
-  fill: var(--main-color);
+  fill: rgb(33, 150, 243);
 }
 
 .footer {
-  background-color: var(--footer-background);
+  background-color: rgb(47, 48, 58);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -869,7 +852,7 @@ ul {
 }
 
 .footer-address-item {
-  color: var(--light-txt-color);
+  color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -877,7 +860,7 @@ ul {
 }
 
 .footer-address-link {
-  color: var(--footer-text);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -889,7 +872,7 @@ ul {
 }
 
 .footer-list-title {
-  color: var(--light-txt-color);
+  color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03px;
@@ -911,17 +894,17 @@ ul {
 }
 
 .footer-icon {
-  fill: var(--light-txt-color);
+  fill: rgb(255, 255, 255);
   height: 20px;
   width: 20px;
 }
 
 .footer-link:hover {
-  background-color: var(--main-color);
+  background-color: rgb(33, 150, 243);
 }
 
 .footer-link:hover .footer-icon {
-  fill: var(--light-txt-color);
+  fill: rgb(255, 255, 255);
 }
 
 .footer-form-wrapper {
@@ -930,7 +913,7 @@ ul {
 
 .footer-form-title {
   padding-bottom: 20px;
-  color: var(--light-txt-color);
+  color: rgb(255, 255, 255);
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -989,10 +972,10 @@ ul {
 }
 
 .footer-form-button {
-  background-color: var(--main-color);
+  background-color: rgb(33, 150, 243);
   border: 0;
   border-radius: 4px;
-  color: var(--light-txt-color);
+  color: rgb(255, 255, 255);
   line-height: 30px;
   font-size: 16px;
   letter-spacing: 0.06em;
@@ -1007,11 +990,11 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
 }
 
 .footer-form-btn-icon {
-  fill: var(--light-txt-color);
+  fill: rgb(255, 255, 255);
   width: 24px;
   height: 24px;
 }
@@ -1032,8 +1015,8 @@ ul {
 }
 
 .control-button {
-  background-color: var(--background-team);
-  color: var(--titles-color);
+  background-color: rgb(245, 244, 250);
+  color: rgb(33, 33, 33);
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
@@ -1043,12 +1026,12 @@ ul {
   padding-right: 22px;
   padding-left: 22px;
   text-align: center;
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
 }
 
 .control-button:hover {
-  background-color: var(--main-color);
-  color: var(--light-txt-color);
+  background-color: rgb(33, 150, 243);
+  color: rgb(255, 255, 255);
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
 }
@@ -1070,7 +1053,7 @@ ul {
 }
 
 .advertisements-item {
-  background-color: var(--light-txt-color);
+  background-color: rgb(255, 255, 255);
   text-align: start;
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
       flex-basis: calc((100% - 60px) / 3);
@@ -1110,7 +1093,7 @@ ul {
 }
 
 .advertisements-desc {
-  color: var(--light-txt-color);
+  color: rgb(255, 255, 255);
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
@@ -1123,7 +1106,7 @@ ul {
 }
 
 .advertisements-title {
-  color: var(--titles-color);
+  color: rgb(33, 33, 33);
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -1133,7 +1116,7 @@ ul {
 }
 
 .advertisements-subtitle {
-  color: var(--desc-color);
+  color: rgb(117, 117, 117);
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
@@ -1145,6 +1128,6 @@ ul {
 
 .advertisements-item-container {
   border: 1px solid;
-  border-color: var(--adv-item-border);
+  border-color: rgb(238, 238, 238);
   border-top: 0;
 }
