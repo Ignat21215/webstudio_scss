@@ -1,76 +1,73 @@
+@use "../utils/variables" as *;
+@use "../utils/placeholders" as *;
+@use "../utils/mixins" as *;
+
 .team {
   background-color: $background-team;
   padding-bottom: 94px;
   padding-top: 94px;
-}
 
-.team-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
 
-.team-item {
-  background-color: $light-txt-color;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  flex-direction: column;
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
-    0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  border: 0;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
+  &__item {
+    background-color: $light-txt-color;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    border: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
 
-.team-item-img {
-  width: 270px;
-  height: 260px;
-}
+  &__img {
+    width: 270px;
+    height: 260px;
+  }
 
-.team-item-desc {
-  color: $desc-color;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.03em;
+  &__desc {
+    @include txt($font-size: 16px, $line-height: 1em);
+    padding-bottom: 16px;
+  }
 
-  padding-bottom: 16px;
-}
+  &__title {
+    @include txt($font-size: 16px, $line-height: 1em);
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    color: $titles-color;
+  }
 
-.team-item-title {
-  color: $titles-color;
-  font-size: 16px;
-  font-weight: 500;
+  &__sm {
+    padding-bottom: 30px;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
 
-  letter-spacing: 0.03em;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
+    &-link {
+      padding: 12px;
+      border-radius: 100%;
+      display: block;
 
-.team-item-list {
-  padding-bottom: 30px;
-  display: flex;
-  gap: 10px;
-  margin: 0 auto;
-}
+      &:hover {
+        background-color: $main-color;
+      }
 
-.team-item-link {
-  padding: 12px;
-  border-radius: 100%;
-  display: block;
-}
+      &:hover .team__sm-icon {
+        fill: $light-txt-color;
+      }
+    }
 
-.team-icon {
-  fill: $icon-color;
-  width: 20px;
-  height: 20px;
-}
-
-.team-item-link:hover {
-  background-color: $main-color;
-}
-
-.team-item-link:hover .team-icon {
-  fill: $light-txt-color;
+    &-icon {
+      fill: $icon-color;
+      width: 20px;
+      height: 20px;
+    }
+  }
 }

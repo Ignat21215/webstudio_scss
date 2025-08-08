@@ -1,36 +1,42 @@
+@use "../utils/variables" as *;
+@use "../utils/placeholders" as *;
+@use "../utils/mixins" as *;
+
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.clients-title {
-  padding-bottom: 50px;
-}
+  &__list {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+  }
 
-.clients-list {
-  display: flex;
-  gap: 30px;
-  margin: 0 auto;
-}
+  &__link {
+    border: 1px solid;
+    border-color: $icon-color;
+    border-radius: 4px;
+    padding: 16px 32px;
+    display: block;
 
-.clients-item-link {
-  border: 1px solid;
-  border-color: $icon-color;
-  border-radius: 4px;
-  padding: 16px 32px;
-  display: block;
-}
+    &:hover {
+      border-color: $main-color;
+    }
 
-.clients-item-icon {
-  fill: $icon-color;
-  width: 100px;
-  height: 60px;
-}
+    &:hover .clients__icon {
+      fill: $main-color;
+    }
+  }
 
-.clients-item-link:hover {
-  border-color: $main-color;
-}
+  &__icon {
+    fill: $icon-color;
+    width: 100px;
+    height: 60px;
+  }
 
-.clients-item-link:hover .clients-item-icon {
-  fill: $main-color;
+  &__icon {
+    fill: $icon-color;
+    width: 100px;
+    height: 60px;
+  }
 }

@@ -1,36 +1,38 @@
+@use "../utils/variables" as *;
+@use "../utils/placeholders" as *;
+@use "../utils/mixins" as *;
+
 .hero {
-  background: linear-gradient(to right,
-      $hero-overlay,
-      $hero-overlay),
+  background: linear-gradient(to right, $hero-overlay, $hero-overlay),
     url(../images/main-page/hero-bg.jpg) center / cover no-repeat;
   padding-top: 200px;
   padding-bottom: 200px;
-}
 
-.hero-container {
-  text-align: center;
-}
+  &__container {
+    text-align: center;
+  }
 
-.hero-title {
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 60px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $light-txt-color;
-  padding-bottom: 30px;
-}
+  &__button {
+    padding: 10px 32px;
+    background-color: $main-color;
+    color: $light-txt-color;
+    border-width: 0;
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 30px;
+    font-size: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    font-family: $font-family;
+  }
 
-.hero-button {
-  padding: 10px 32px;
-  background-color: $main-color;
-  color: $light-txt-color;
-  border-width: 0;
-  border-radius: 4px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  line-height: 30px;
-  font-size: 16px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  font-family: $font-family;
+  &__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $light-txt-color;
+    padding-bottom: 30px;
+  }
 }
