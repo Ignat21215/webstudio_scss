@@ -40,36 +40,36 @@
       &:hover {
         color: $main-color;
       }
+    }
 
-      &-link--current,
-      &-link--portfolio-current {
-        color: $main-color;
-        position: relative;
-      }
+    &-link--current,
+    &-link--portfolio-current {
+      color: $main-color;
+      position: relative;
+    }
 
-      &-link--current:hover::after {
-        content: "";
-        position: absolute;
-        display: inline-block;
-        border-radius: 2px;
-        top: 43px;
-        background-color: $main-color;
-        width: 48px;
-        height: 4px;
-        left: 0;
-      }
+    &-link--current:hover::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      border-radius: 2px;
+      top: 43px;
+      background-color: $main-color;
+      width: 48px;
+      height: 4px;
+      left: 0;
+    }
 
-      &-link--portfolio-current:hover::after {
-        content: "";
-        position: absolute;
-        display: inline-block;
-        left: 0;
-        border-radius: 2px;
-        top: 43px;
-        background-color: $main-color;
-        width: 78px;
-        height: 4px;
-      }
+    &-link--portfolio-current:hover::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      left: 0;
+      border-radius: 2px;
+      top: 43px;
+      background-color: $main-color;
+      width: 78px;
+      height: 4px;
     }
   }
 

@@ -251,11 +251,11 @@ ul {
 .header__nav-link:hover {
   color: rgb(33, 150, 243);
 }
-.header__nav-link-link--current, .header__nav-link-link--portfolio-current {
+.header__nav-link--current, .header__nav-link--portfolio-current {
   color: rgb(33, 150, 243);
   position: relative;
 }
-.header__nav-link-link--current:hover::after {
+.header__nav-link--current:hover::after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -266,7 +266,7 @@ ul {
   height: 4px;
   left: 0;
 }
-.header__nav-link-link--portfolio-current:hover::after {
+.header__nav-link--portfolio-current:hover::after {
   content: "";
   position: absolute;
   display: inline-block;
