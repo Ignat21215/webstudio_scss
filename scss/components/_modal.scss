@@ -158,8 +158,8 @@
 
 @media (max-width: 768px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    max-height: 609px;
 
     &__close-btn {
       bottom: 571px;
@@ -171,7 +171,7 @@
     }
 
     &__textarea {
-      width: 370px;
+      max-width: 370px;
 
       &::placeholder {
         font-size: 14px;

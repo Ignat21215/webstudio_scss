@@ -82,8 +82,8 @@
     }
 
     &__img {
-      width: 354px;
-      height: 374px;
+     max-width: 354px;
+     max-height: 374px;
     }
   }
 }
@@ -92,8 +92,8 @@
   .team {
 
     &__img {
-      width: 450px;
-      height: 460px;
+      max-width: 450px;
+      max-height: 460px;
     }
   }
 }

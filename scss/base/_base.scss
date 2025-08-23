@@ -31,12 +31,12 @@ ul {
 
 @media (max-width: 768px) {
   .container {
-    width: 738px;
+    max-width: 738px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    width: 450px;
+    max-width: 450px;
   }
 }
