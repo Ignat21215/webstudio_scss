@@ -1,6 +1,7 @@
 @use "../utils/variables" as *;
 @use "../utils/placeholders" as *;
 @use "../utils/mixins" as *;
+@use "../utils/fonts" as *;
 
 .hero {
   background: linear-gradient(to right, $hero-overlay, $hero-overlay),
@@ -34,5 +35,23 @@
     text-transform: uppercase;
     color: $light-txt-color;
     padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background: linear-gradient(to right, $hero-overlay, $hero-overlay),
+      url(../images/main-page/hero-bg.jpg) center / cover no-repeat;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    &__title {
+      font-size: 26px;
+      line-height: 42px;
+    }
+
+    &__button {
+      padding: 10px 24px;
+    }
   }
 }

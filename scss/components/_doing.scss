@@ -1,6 +1,7 @@
 @use "../utils/variables" as *;
 @use "../utils/placeholders" as *;
 @use "../utils/mixins" as *;
+@use '../utils/fonts' as *;
 
 .doing {
   padding-bottom: 94px;
@@ -36,5 +37,11 @@
   &__img {
     width: 370px;
     height: 294px;
+  }
+}
+
+@media (max-width: 768px) {
+  .doing {
+    display: none;
   }
 }

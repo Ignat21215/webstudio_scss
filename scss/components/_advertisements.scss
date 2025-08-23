@@ -1,6 +1,7 @@
-@use '../utils/variables' as *;
-@use '../utils/placeholders' as *;
-@use '../utils/mixins' as *;
+@use "../utils/variables" as *;
+@use "../utils/placeholders" as *;
+@use "../utils/mixins" as *;
+@use "../utils/fonts" as *;
 
 .advertisements {
   padding-bottom: 94px;
@@ -60,6 +61,11 @@
     letter-spacing: 0.03em;
   }
 
+  &__item-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   &__title {
     color: $titles-color;
     font-size: 18px;
@@ -68,6 +74,7 @@
     line-height: 36px;
     padding-top: 20px;
     padding-left: 24px;
+    max-width: 306px;
   }
 
   &__subtitle {
@@ -81,5 +88,32 @@
     border: 1px solid;
     border-color: $adv-item-border;
     border-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .advertisements {
+
+    &__image {
+      width: 354px;
+      height: 294px;
+    }
+
+    &-overlay__wrapper {
+      width: 354px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .advertisements {
+
+    &__image {
+      width: 450px;
+    }
+
+    &-overlay__wrapper {
+      width: 450px;
+    }
   }
 }
