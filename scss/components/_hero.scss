@@ -6,8 +6,7 @@
 .hero {
   background: linear-gradient(to right, $hero-overlay, $hero-overlay),
     url(../images/main-page/hero-bg.jpg) center / cover no-repeat;
-  padding-top: 200px;
-  padding-bottom: 200px;
+    padding-block: 200px;
 
   &__container {
     text-align: center;
