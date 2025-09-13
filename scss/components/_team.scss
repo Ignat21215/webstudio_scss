@@ -91,9 +91,12 @@
 @media (max-width: 480px) {
   .team {
 
-    &__img {
-      max-width: 450px;
-      max-height: 460px;
+    &__list {
+      justify-content: center;
+    }
+
+    &__item {
+max-width: 450px;
     }
   }
 }

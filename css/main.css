@@ -465,8 +465,8 @@ ul {
   }
 }
 .hero {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-page/hero-bg.jpg) center/cover no-repeat;
-  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-page/hero-bg.jpg) center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-page/hero-bg@1.jpg) center/cover no-repeat;
+  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-page/hero-bg@1.jpg) center/cover no-repeat;
   padding-block: 200px;
 }
 .hero__container {
@@ -498,8 +498,6 @@ ul {
 
 @media (max-width: 768px) {
   .hero {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-page/hero-bg.jpg) center/cover no-repeat;
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-page/hero-bg.jpg) center/cover no-repeat;
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -509,6 +507,19 @@ ul {
   }
   .hero__button {
     padding: 10px 24px;
+  }
+}
+@media (min-device-pixel-ratio: 1), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/main-page/hero-bg@2.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/main-page/hero-bg@3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .backdrop {
@@ -926,9 +937,13 @@ ul {
   }
 }
 @media (max-width: 480px) {
-  .team__img {
+  .team__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team__item {
     max-width: 450px;
-    max-height: 460px;
   }
 }
 .clients {

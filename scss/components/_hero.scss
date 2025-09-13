@@ -5,8 +5,8 @@
 
 .hero {
   background: linear-gradient(to right, $hero-overlay, $hero-overlay),
-    url(../images/main-page/hero-bg.jpg) center / cover no-repeat;
-    padding-block: 200px;
+    url(../images/main-page/hero-bg@1.jpg) center / cover no-repeat;
+  padding-block: 200px;
 
   &__container {
     text-align: center;
@@ -39,8 +39,6 @@
 
 @media (max-width: 768px) {
   .hero {
-    background: linear-gradient(to right, $hero-overlay, $hero-overlay),
-      url(../images/main-page/hero-bg.jpg) center / cover no-repeat;
     padding-top: 118px;
     padding-bottom: 118px;
 
@@ -52,5 +50,26 @@
     &__button {
       padding: 10px 24px;
     }
+  }
+}
+
+@media (min-device-pixel-ratio: 1),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/main-page/hero-bg@2.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/main-page/hero-bg@3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
